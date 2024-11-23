@@ -5,7 +5,7 @@ def single_root_words(root_word, *other_words):
         up_other_words = str(other_words[i])
         if root_word.upper() in up_other_words.upper():
             same_words.append(other_words[i])
-        if up_other_words.upper() in root_word.upper():
+        elif up_other_words.upper() in root_word.upper():
             same_words.append(other_words[i])
     return same_words
 
